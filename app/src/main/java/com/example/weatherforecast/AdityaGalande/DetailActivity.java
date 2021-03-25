@@ -33,7 +33,6 @@ public class DetailActivity extends AppCompatActivity {
         }
     }
 
-    // HE BAGH ADITYA MORNING LA ADITYA
     private Intent createShareForecastIntent() {
         Intent shareIntent = ShareCompat.IntentBuilder.from(this)
                 .setType("text/plain")
