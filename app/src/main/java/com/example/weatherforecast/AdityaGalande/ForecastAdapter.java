@@ -16,7 +16,7 @@ public class ForecastAdapter extends RecyclerView.Adapter<ForecastAdapter.Foreca
     private final ForecastAdapterOnClickHandler mClickHandler;
 
     public interface ForecastAdapterOnClickHandler {
-        void onClick(String weatherForDay);
+        void  onClick(String weatherForDay);
     }
 
 
