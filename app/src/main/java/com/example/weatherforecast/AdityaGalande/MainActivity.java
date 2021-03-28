@@ -204,12 +204,19 @@ public class MainActivity extends AppCompatActivity implements ForecastAdapter.F
         // COMPLETED (5) Refactor the refresh functionality to work with our AsyncTaskLoader
         if (id == R.id.action_refresh) {
             invalidateData();
+            //To REFRESH URL you need only BELOW Method.................
             getSupportLoaderManager().restartLoader(FORECAST_LOADER_ID, null, this);
             return true;
         }
 
         if (id == R.id.action_map) {
             openLocationInMap();
+            return true;
+        }
+
+        if (id == R.id.action_settings) {
+            Intent startSettingsActivity = new Intent(this, SettingsActivity.class);
+            startActivity(startSettingsActivity);
             return true;
         }
 
